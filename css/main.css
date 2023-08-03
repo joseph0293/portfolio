@@ -17,5 +17,14 @@
 
 .outlinebutton:hover {
     background-color: var(--berkeleyblue);
-    color: white!important;
+    color: white !important;
+}
+
+.outlinebuttonfooter:hover {
+    background-color: white;
+    color: var(--berkeleyblue) !important;
+}
+
+footer {
+    background-color: var(--berkeleyblue);
 }
