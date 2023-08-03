@@ -20,10 +20,10 @@
 
     <!-- NAVIGATION -->
     <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary shadow">
             <div class="javanav container-fluid">
-                <a class="navbar-brand" href="index.html">
-                    <img class="logo1" src="/images/logo.svg" alt="logo" width="165" height="50">
+                <a class="navbar-brand ps-5" href="index.html">
+                    <img class="logo1" src="/images/logo.svg" alt="logo" width="200" height="100">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
@@ -58,45 +58,46 @@
         <!-- ****************************************** NAVIGATION ENDS ****************************************** -->
 
         <!-- BANNER IMAGE + TITLE/INTRODUCTION -->
-        <div class="banner">
-            <div class="textinbanner">
-                <h1 class="text-white">
-                    Hello, I'm Sunit!
-                </h1>
-                <p class="display-1 text-white">
-                    I design brands, visuals, &#x003C;code&#x003E; & motion.
-                </p>
+        <div class="card text-bg-dark border-0 rounded-0">
+            <img src="images/bannermobile.jpg" class="d-md-none d-sm-block opacity-50 card-img rounded-0" alt="Banner image of myself working on a computer">
+            <img src="images/bannertab.jpg" class="d-none d-md-block opacity-50 card-img rounded-0" alt="Banner image of myself working on a computer">
+            <div class="card-img-overlay p-5">
+                <h1 class="card-title text-white pt-4 display-6">Hello, I'm Sunit!</h1>
+                <p class="card-text display-1 lh-1 fw-bold">I design brands, visuals, &#x003C;code&#x003E; & motion.</p>
+            </div>
+        </div>
+        <!-- SHOWREEL -->
+        <div class="bg-primary">
+            <p class="text-center mb-0 text-white">Watch my</p>
+            <h2 class="text-center mx-4 text-white">Showreel</h2>
+            <div class="showreelvideo">
+                <iframe class="mx-2 p-4" title="vimeo-player" src="https://player.vimeo.com/video/750096112?h=9320b202a0" width="100%" height="360" frameborder="0" allowfullscreen></iframe>
+                <!-- Put the video here! -->
             </div>
         </div>
     </header>
     <main class="container-xxl">
-        <!-- SHOWREEL -->
-        <div class="">
-            <p class="text-center mx-4 mb-0">Watch my</p>
-            <h2 class="text-center mx-4">Showreel</h2>
-            <div class="showreelvideo">
-                <video src="..." class="object-fit-contain" autoplay></video>
-
-                <!-- Put the video here! -->
-            </div>
-        </div>
-
         <!-- HIGHLIGHTED PROJECTS -->
         <div class="projects">
             <h2 class="m-4 text-primary text-center">Here are some projects I like to brag about…</h2>
             <!-- CARD 1 -->
             <div class="card border-0 m-4 mb-lg-5 mt-lg-5">
                 <div class="row g-0">
-                    <div class="col-xl-6 order-xl-1">
-                        <img class="d-md-none img-fluid rounded-5" src="images/agsoap.jpg" alt="Photo of soap packaging with ingredients">
-                        <img class="d-none d-md-block img-fluid rounded-5" src="images/agsoapwide.jpg" alt="Photo of soap packaging with ingredients">
+                    <div class="col-xl-8 order-xl-1">
+                        <img class="d-md-none img-fluid rounded-5" src="images/agsoap.jpg"
+                            alt="Photo of soap packaging with ingredients">
+                        <img class="d-none d-md-block img-fluid rounded-5" src="images/agsoapwide.jpg"
+                            alt="Photo of soap packaging with ingredients">
                     </div>
-                    <div class="col-xl-6">
+                    <div class="col-xl-4">
                         <div class="card-body px-0 pe-xl-4">
                             <h2 class="card-title text-primary">Amazing Greys</h2>
                             <h5 class="text-secondary d-none d-md-block">PHOTOGRAPHY</h5>
-                            <p class="d-none d-md-block text-primary">Product photography conceptualized and shot for India’s first beauty brand for those over forty.</p>
-                            <a href="#" class="outlinebutton btn btn-white rounded-5 text-primary border-1 border-primary">See all <strong>Photography</strong> work &#9654;</a>
+                            <p class="d-none d-md-block text-primary">Product photography conceptualized and shot for
+                                India’s first beauty brand for those over forty.</p>
+                            <a href="#"
+                                class="outlinebutton btn btn-white rounded-5 text-primary border-1 border-primary">See
+                                all <strong>Photography</strong> work &#9654;</a>
                         </div>
                     </div>
                 </div>
@@ -105,17 +106,22 @@
             <!-- CARD 2 -->
             <div class="card border-0 m-4 mb-lg-5 mt-lg-5">
                 <div class="row g-0">
-                    <div class="col-xl-6">
-                        <img class="d-md-none img-fluid rounded-5" src="images/b2gsquare.jpg" alt="Photo of Bready To Go sticker on packaged loaves of bread">
-                        <img class="d-none d-md-block img-fluid rounded-5" src="images/b2gwide.jpg" alt="Photo of Bready To Go sticker on packaged loaves of bread">
+                    <div class="col-xl-8">
+                        <img class="d-md-none img-fluid rounded-5" src="images/b2gsquare.jpg"
+                            alt="Photo of Bready To Go sticker on packaged loaves of bread">
+                        <img class="d-none d-md-block img-fluid rounded-5" src="images/b2gwide.jpg"
+                            alt="Photo of Bready To Go sticker on packaged loaves of bread">
                     </div>
-                    <div class="col-xl-6">
+                    <div class="col-xl-4">
                         <div class="card-body px-0 ps-xl-4">
                             <h2 class="card-title text-primary">Bready To Go</h2>
                             <h5 class="text-secondary d-none d-md-block">UX DESIGN</h5>
-                            <p class="d-none d-md-block text-primary">Class assignment on a drive-through bakery in Ottawa focused on speedy, freshly
+                            <p class="d-none d-md-block text-primary">Class assignment on a drive-through bakery in
+                                Ottawa focused on speedy, freshly
                                 made bread.</p>
-                            <a href="uxdesign.html" class="outlinebutton btn btn-white text-primary rounded-5 border-1 border-primary">See all <strong>UX Design</strong> work &#9654;</a>
+                            <a href="uxdesign.html"
+                                class="outlinebutton btn btn-white text-primary rounded-5 border-1 border-primary">See
+                                all <strong>UX Design</strong> work &#9654;</a>
                         </div>
                     </div>
                 </div>
@@ -123,17 +129,22 @@
             <!-- CARD 3 -->
             <div class="card border-0 m-4 mb-lg-10 mt-lg-10">
                 <div class="row g-0">
-                    <div class="col-xl-6 order-xl-1">
-                        <img class="d-md-none img-fluid rounded-5" src="images/ntorqmarvelsquare.jpg" alt="Dramatic picture of motor scooter with Black Panther mask behind">
-                        <img class="d-none d-md-block img-fluid rounded-5" src="images/ntorqmarvewide.jpg" alt="Dramatic picture of motor scooter with Black Panther mask behind">
+                    <div class="col-xl-8 order-xl-1">
+                        <img class="d-md-none img-fluid rounded-5" src="images/ntorqmarvelsquare.jpg"
+                            alt="Dramatic picture of motor scooter with Black Panther mask behind">
+                        <img class="d-none d-md-block img-fluid rounded-5" src="images/ntorqmarvewide.jpg"
+                            alt="Dramatic picture of motor scooter with Black Panther mask behind">
                     </div>
-                    <div class="col-xl-6">
+                    <div class="col-xl-4">
                         <div class="card-body px-0 pe-xl-4">
                             <h2 class="card-title text-primary">TVS Ntorq X MARVEL</h2>
                             <h5 class="text-secondary d-none d-md-block">ART DIRECTION</h5>
-                            <p class="d-none d-md-block text-primary">Advertising for a TVS X MARVEL collab that resulted in a motor scooter launch.
+                            <p class="d-none d-md-block text-primary">Advertising for a TVS X MARVEL collab that
+                                resulted in a motor scooter launch.
                             </p>
-                            <a href="artdirection.html" class="outlinebutton btn btn-white text-primary rounded-5 border-primary">See all <strong>Advertising</strong> work &#9654;</a>
+                            <a href="artdirection.html"
+                                class="outlinebutton btn btn-white text-primary rounded-5 border-primary">See all
+                                <strong>Advertising</strong> work &#9654;</a>
                         </div>
                     </div>
                 </div>
@@ -141,33 +152,33 @@
         </div>
     </main>
     <!-- FOOTER -->
-    <footer class="bg-primary p-5">
-        <h2 class="text-white">
+    <footer class="bg-primary p-5 pb-2">
+        <h2 class="text-white display-3 fw-medium pb-3">
             Don't be shy, get in touch!
         </h2>
-        <a class="outlinebuttonfooter btn btn-white text-white rounded-5 border-white" href="mailto:sunitjjo@gmail.com">
+        <a class="outlinebuttonfooter btn btn-white text-white rounded-5 border-white fs-5" href="mailto:sunitjjo@gmail.com">
             Email me
         </a>
-        <hr>
+        <hr class="my-5 border-white border-3">
         <div class="footergrid row">
             <div class="col-md-4 logoandmail">
-                <img class="footerlogo" src="images/logofooter.svg" alt="Logo" width="165" height="50">
+                <img class="footerlogo" src="images/logofooter.svg" alt="Logo" height="65">
                 <br>
-                <a href="mailto:sunitjjo@gmail.com">sunitjjo@gmail.com</a>
+                <a class="link-light link-underline fs-2" href="mailto:sunitjjo@gmail.com">sunitjjo@gmail.com</a>
             </div>
-            <div class="col-md-4 sociallinks py-4 py-md-0">
-                <a href="https://www.linkedin.com/in/sunitjj/">Linkedin</a>
+            <div class="col-md-4 sociallinks py-3 py-md-0">
+                <a class="link-light link-underline" href="https://www.linkedin.com/in/sunitjj/">Linkedin</a>
                 <br>
-                <a href="https://www.behance.net/sunitj">Behance</a>
+                <a class="link-light link-underline" href="https://www.behance.net/sunitj">Behance</a>
                 <br>
-                <a href="https://www.instagram.com/crispypoppadom/">Instagram</a>
+                <a class="link-light link-underline" href="https://www.instagram.com/crispypoppadom/">Instagram</a>
             </div>
-            <div class="col-md-4 quicklinks py-4 py-md-0 link-white">
-                <a href="about.html">About</a>
+            <div class="col-md-4 quicklinks py-3 py-md-0">
+                <a class="link-light link-underline" href="about.html">About</a>
                 <br>
-                <a href="uxdesign.html">UX Design</a>
+                <a class="link-light link-underline" href="uxdesign.html">UX Design</a>
                 <br>
-                <a href="artdirection.html">Art Direction</a>
+                <a class="link-light link-underline" href="artdirection.html">Art Direction</a>
             </div>
         </div>
         <p class="text-white pt-md-5">© 2023 Sunit J. All rights reserved.</p>

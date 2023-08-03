@@ -8,13 +8,6 @@
 * {
     font-family: 'Montserrat';
 }
-
-.banner {
-    height: 30vh;
-    background-image: url(/images/banner.jpg);
-
-}
-
 .outlinebutton:hover {
     background-color: var(--berkeleyblue);
     color: white !important;
