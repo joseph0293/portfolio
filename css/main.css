@@ -3,11 +3,13 @@
     --cinnabar: #E94F37;
     --berkeleyblue: #003262;
 
+
 }
 
 * {
     font-family: 'Montserrat';
 }
+
 .outlinebutton:hover {
     background-color: var(--berkeleyblue);
     color: white !important;
@@ -20,4 +22,62 @@
 
 footer {
     background-color: var(--berkeleyblue);
+}
+
+/* 
+.navwork:hover {
+    border: 1px solid var(--berkeleyblue);
+    border-radius: 20px;
+} */
+
+/* Set font everywhere */
+
+body {
+    font-family: "Montserrat";
+}
+
+/* Styling nav items */
+
+.navresume {
+    background-color: var(--californiagold);
+    color: white;
+    border-radius: 40px;
+}
+
+.navresume:hover,
+.navresume:active {
+    background-color: var(--berkeleyblue);
+}
+
+.navabout {
+    border-radius: 40px;
+    border: 2px solid white;
+}
+
+.navabout:hover,
+.navabout:active {
+    border: 2px solid var(--berkeleyblue);
+}
+
+.navwork {
+    border: 2px solid white;
+    border-radius: 40px;
+}
+
+.navwork:hover,
+.navwork:active {
+    border: 2px solid var(--berkeleyblue);
+}
+
+.workitems {
+    border: none;
+    background: none;
+}
+
+/* Remove the hover */
+.navphotography:hover,
+.navuxdesign:hover,
+.navartdirection:hover {
+    background: none;
+    color: var(--berkeleyblue);
 }

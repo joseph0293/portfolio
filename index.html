@@ -13,6 +13,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="css/main.css">
 </head>
 
@@ -20,37 +21,86 @@
 
     <!-- NAVIGATION -->
     <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary shadow">
-            <div class="javanav container-fluid">
-                <a class="navbar-brand ps-5" href="index.html">
-                    <img class="logo1" src="/images/logo.svg" alt="logo" width="200" height="100">
+        <nav class="navbar navbar-expand-lg bg-white shadow py-lg-2">
+            <div class="container javanav">
+                <a class="d-lg-none navbar-brand ps-3 ps-sm-0" href="index.html">
+                    <img class="logo1" src="/images/logo.svg" alt="logo" width="220" height="120">
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                <button class="d-lg-none navbar-toggler me-2 me-sm-0" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navigationdrop" aria-controls="navigationdrop" aria-expanded="false"
                     aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                    <span class="navbar-toggler-icon border-0"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                    <ul class="navbar-nav">
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
+
+                <div class="px-5 mx-5 collapse navbar-collapse justify-content-lg-between text-center"
+                    id="navigationdrop">
+                    <!-- Logo for desktop only -->
+                    <div>
+                        <a class="d-none d-lg-block navbar-brand" href="index.html">
+                            <img id="logodesktop" src="/images/logo.svg" alt="logo" width="250" height="120"
+                                onmouseover="hover(this);" onmouseout="hoverOut(this)">
+                        </a>
+                    </div>
+                    <!-- Padding to align with everything ps-3 & ps-sm-0 -->
+                    <!-- WORK -->
+                    <ul class="navbar-nav py-3 d-lg-none">
+                        <!-- Padding to give enough space -->
+                        <li class="navwork nav-item dropdown link-primary bg-white">
+                            <a class="nav-link dropdown-toggle fs-4 text-primary p-3 px-5" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
                                 Work
                             </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="photography.html">Photography</a></li>
-                                <li><a class="dropdown-item" href="uxdesign.html">UX Design</a></li>
-                                <li><a class="dropdown-item" href="artdirection.html">Art Direction</a></li>
+                            <ul class="workitems dropdown-menu text-center fs-5">
+                                <li>
+                                    <a class="navphotography dropdown-item py-3" href="photography.html">&#x003E;
+                                        Photography</a>
+                                </li>
+                                <li>
+                                    <a class="navuxdesign dropdown-item py-3" href="uxdesign.html">&#x003E; UX
+                                        Design</a>
+                                </li>
+                                <li>
+                                    <a class="navartdirection dropdown-item py-3" href="artdirection.html">&#x003E; Art
+                                        Direction</a>
+                                </li>
                             </ul>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="about.html">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" target="_blank"
-                                href="https://www.dropbox.com/scl/fi/l3lwlzy48x57yh7ndb9th/Resume-test.pdf?rlkey=ggzcfbgfz8tlrncumady8gcn5">Resume</a>
+                    </ul>
+                    <!-- DISPLAY ON DESKTOP ONLY -->
+                    <ul class="navbar-nav py-3 d-none d-lg-block">
+                        <!-- Padding to give enough space -->
+                        <li class="navwork nav-item dropdown link-primary bg-white">
+                            <a class="nav-link dropdown-toggle fs-4 text-primary p-3 px-5" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Work
+                            </a>
+                            <ul class="deskmenu dropdown-menu fs-5 rounded-5 border-2">
+                                <li>
+                                    <a class="dropdown-item p-4" href="photography.html">&#x003E; Photography</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item p-4" href="uxdesign.html">&#x003E; UX Design</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item p-4" href="artdirection.html">&#x003E; Art Direction</a>
+                                </li>
+                            </ul>
                         </li>
                     </ul>
+                    <!-- ABOUT -->
+                    <div class="nav-item border-2 px-5 navabout p-3">
+                        <a class="nav-link active fs-4 text-primary" aria-current="page" href="about.html">About</a>
+                    </div>
+                    <!-- RESUME -->
+                    <!-- Padding only on hamburger to keep resume separate -->
+                    <div class="nav-item pb-5 pb-lg-3 py-3">
+                        <!-- Resume styling -->
+                        <div class="navresume border-0 px-4">
+                            <a class="nav-link active fs-4 p-3 fw-semibold" aria-current="page" target="_blank"
+                                href="https://www.dropbox.com/scl/fi/l3lwlzy48x57yh7ndb9th/Resume-test.pdf?rlkey=ggzcfbgfz8tlrncumady8gcn5">Resume
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </nav>
@@ -59,11 +109,19 @@
 
         <!-- BANNER IMAGE + TITLE/INTRODUCTION -->
         <div class="card text-bg-dark border-0 rounded-0">
-            <img src="images/bannermobile.jpg" class="d-md-none d-sm-block opacity-50 card-img rounded-0" alt="Banner image of myself working on a computer">
-            <img src="images/bannertab.jpg" class="d-none d-md-block opacity-50 card-img rounded-0" alt="Banner image of myself working on a computer">
-            <div class="card-img-overlay p-5">
-                <h1 class="card-title text-white pt-4 display-6">Hello, I'm Sunit!</h1>
-                <p class="card-text display-1 lh-1 fw-bold">I design brands, visuals, &#x003C;code&#x003E; & motion.</p>
+            <img src="images/bannermobile.jpg" class="d-md-none d-sm-block opacity-50 card-img rounded-0"
+                alt="Banner image of myself working on a computer">
+            <img src="images/bannertab.jpg" class="d-none d-md-block d-xl-none opacity-50 card-img rounded-0"
+                alt="Banner image of myself working on a computer">
+            <img src="images/bannerdesk.jpg" class="d-none d-xl-block opacity-50 card-img rounded-0"
+                alt="Banner image of myself working on a computer">
+            <div class="card-img-overlay pt-5 pt-xxl-5 pt-lg-5 mt-lg-5 pt-md-5">
+                <!-- Adjusting text padding and margin to each browser width -->
+                <div class="container">
+                    <h1 class="card-title text-white display-6">Hello, I'm Sunit!</h1>
+                    <p class="card-text display-1 lh-1 fw-bold">I design brands, visuals, &#x003C;code&#x003E; & motion.
+                    </p>
+                </div>
             </div>
         </div>
         <!-- SHOWREEL -->
@@ -71,7 +129,9 @@
             <p class="text-center mb-0 text-white">Watch my</p>
             <h2 class="text-center mx-4 text-white">Showreel</h2>
             <div class="showreelvideo">
-                <iframe class="mx-2 p-4" title="vimeo-player" src="https://player.vimeo.com/video/750096112?h=9320b202a0" width="100%" height="360" frameborder="0" allowfullscreen></iframe>
+                <iframe class="mx-2 p-4" title="vimeo-player"
+                    src="https://player.vimeo.com/video/750096112?h=9320b202a0" width="100%" height="360"
+                    frameborder="0" allowfullscreen></iframe>
                 <!-- Put the video here! -->
             </div>
         </div>
@@ -79,7 +139,8 @@
     <main class="container-xxl">
         <!-- HIGHLIGHTED PROJECTS -->
         <div class="projects">
-            <h2 class="m-4 text-primary text-center">Here are some projects I like to brag about…</h2>
+            <h2 class="m-4 text-primary text-center display-5 fw-semibold">Here are some projects I like to brag about…
+            </h2>
             <!-- CARD 1 -->
             <div class="card border-0 m-4 mb-lg-5 mt-lg-5">
                 <div class="row g-0">
@@ -91,12 +152,13 @@
                     </div>
                     <div class="col-xl-4">
                         <div class="card-body px-0 pe-xl-4">
-                            <h2 class="card-title text-primary">Amazing Greys</h2>
+                            <h2 class="card-title text-primary display-5 fw-semibold">Amazing Greys</h2>
                             <h5 class="text-secondary d-none d-md-block">PHOTOGRAPHY</h5>
-                            <p class="d-none d-md-block text-primary">Product photography conceptualized and shot for
+                            <p class="d-none d-md-block text-primary fs-5">Product photography conceptualized and shot
+                                for
                                 India’s first beauty brand for those over forty.</p>
                             <a href="#"
-                                class="outlinebutton btn btn-white rounded-5 text-primary border-1 border-primary">See
+                                class="outlinebutton btn btn-white rounded-5 text-primary border-1 border-primary fs-5">See
                                 all <strong>Photography</strong> work &#9654;</a>
                         </div>
                     </div>
@@ -114,13 +176,13 @@
                     </div>
                     <div class="col-xl-4">
                         <div class="card-body px-0 ps-xl-4">
-                            <h2 class="card-title text-primary">Bready To Go</h2>
+                            <h2 class="card-title text-primary display-5 fw-semibold">Bready To Go</h2>
                             <h5 class="text-secondary d-none d-md-block">UX DESIGN</h5>
-                            <p class="d-none d-md-block text-primary">Class assignment on a drive-through bakery in
+                            <p class="d-none d-md-block text-primary fs-5">Class assignment on a drive-through bakery in
                                 Ottawa focused on speedy, freshly
                                 made bread.</p>
                             <a href="uxdesign.html"
-                                class="outlinebutton btn btn-white text-primary rounded-5 border-1 border-primary">See
+                                class="outlinebutton btn btn-white text-primary rounded-5 border-1 border-primary fs-5">See
                                 all <strong>UX Design</strong> work &#9654;</a>
                         </div>
                     </div>
@@ -137,13 +199,13 @@
                     </div>
                     <div class="col-xl-4">
                         <div class="card-body px-0 pe-xl-4">
-                            <h2 class="card-title text-primary">TVS Ntorq X MARVEL</h2>
+                            <h2 class="card-title text-primary display-5 fw-semibold">TVS Ntorq X MARVEL</h2>
                             <h5 class="text-secondary d-none d-md-block">ART DIRECTION</h5>
-                            <p class="d-none d-md-block text-primary">Advertising for a TVS X MARVEL collab that
+                            <p class="d-none d-md-block text-primary fs-5">Advertising for a TVS X MARVEL collab that
                                 resulted in a motor scooter launch.
                             </p>
                             <a href="artdirection.html"
-                                class="outlinebutton btn btn-white text-primary rounded-5 border-primary">See all
+                                class="outlinebutton btn btn-white text-primary rounded-5 border-primary fs-5">See all
                                 <strong>Advertising</strong> work &#9654;</a>
                         </div>
                     </div>
@@ -156,15 +218,16 @@
         <h2 class="text-white display-3 fw-medium pb-3">
             Don't be shy, get in touch!
         </h2>
-        <a class="outlinebuttonfooter btn btn-white text-white rounded-5 border-white fs-5" href="mailto:sunitjjo@gmail.com">
+        <a class="outlinebuttonfooter btn btn-white text-white rounded-5 border-white fs-5"
+            href="mailto:sunitjjo@gmail.com">
             Email me
         </a>
-        <hr class="my-5 border-white border-3">
+        <hr class="my-5 border-white border-2">
         <div class="footergrid row">
             <div class="col-md-4 logoandmail">
                 <img class="footerlogo" src="images/logofooter.svg" alt="Logo" height="65">
                 <br>
-                <a class="link-light link-underline fs-2" href="mailto:sunitjjo@gmail.com">sunitjjo@gmail.com</a>
+                <a class="link-light link-underline fs-4" href="mailto:sunitjjo@gmail.com">sunitjjo@gmail.com</a>
             </div>
             <div class="col-md-4 sociallinks py-3 py-md-0">
                 <a class="link-light link-underline" href="https://www.linkedin.com/in/sunitjj/">Linkedin</a>
@@ -207,6 +270,16 @@
                 logo.src = 'images/logo.svg'
             }
         })
+    </script>
+    <!-- Making logo wink on hover for desktop -->
+    <script>
+        function hover(img) {
+            img.src = "images/logo2.svg"
+        }
+
+        function hoverOut(img) {
+            img.src = "images/logo.svg"
+        }
     </script>
 
 </body>
