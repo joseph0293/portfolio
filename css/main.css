@@ -201,7 +201,8 @@ footer,
 .outlinebutton,
 .navwork:hover,
 .navwork:active,
-.inputborderberkely {
+.inputborderberkely,
+.thumbnailborder {
     border: 2px solid var(--berkeleyblue);
 }
 
@@ -221,4 +222,14 @@ footer,
 
 .inputborderberkely {
     width: 100%;
+}
+
+/* Making project cards move up on hover */
+
+.projectcard {
+    transition: 0.3s;
+}
+
+.projectcard:hover {
+    transform: translateY(-15px);
 }
