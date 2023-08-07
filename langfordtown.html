@@ -13,39 +13,99 @@
 
 <body>
 
+
+
     <!-- NAVIGATION -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="index.html">
-                <img src="/images/logo.svg" alt="Bootstrap" width="165" height="50">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav">
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            Work
+    <header>
+        <nav class="fixed-top navbar navbar-expand-lg bg-white shadow py-lg-2">
+            <div class="container javanav">
+                <a class="d-lg-none navbar-brand ps-3 ps-sm-0" href="index.html">
+                    <img class="logo1" src="/images/logo.svg" alt="logo" width="220" height="120">
+                </a>
+                <!-- Change span to 3 empty spans for custom hamburger to X -->
+                <button class="navbar-toggler collapsed border-0 d-lg-none" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navigationdrop" aria-controls="navigationdrop" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-lg-between text-center"
+                    id="navigationdrop">
+                    <!-- Logo for desktop only -->
+                    <div>
+                        <a class="d-none d-lg-block navbar-brand" href="index.html">
+                            <img id="logodesktop" src="/images/logo.svg" alt="logo" width="230" height="120"
+                                onmouseover="hover(this);" onmouseout="hoverOut(this)">
                         </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="photography.html">Photography</a></li>
-                            <li><a class="dropdown-item" href="uxdesign.html">UX Design</a></li>
-                            <li><a class="dropdown-item" href="artdirection.html">Art Direction</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="about.html">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" target="_blank" href="https://www.dropbox.com/scl/fi/l3lwlzy48x57yh7ndb9th/Resume-test.pdf?rlkey=ggzcfbgfz8tlrncumady8gcn5">Resume</a>
-                    </li>
-                </ul>
+                    </div>
+                    <!-- Padding to align with everything ps-3 & ps-sm-0 -->
+                    <!-- WORK -->
+                    <ul class="navbar-nav py-3 d-lg-none">
+                        <!-- Padding to give enough space -->
+                        <li class="navwork nav-item dropdown bg-white">
+                            <a class="navworkblue nav-link dropdown-toggle fs-3 p-3 px-5 fw-medium" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Work
+                            </a>
+                            <ul class="workitems dropdown-menu text-center fs-4">
+                                <li>
+                                    <a class="textberkeley navphotography dropdown-item py-4"
+                                        href="photography.html">Photography</a>
+                                </li>
+                                <li>
+                                    <a class="textberkeley navuxdesign dropdown-item py-4" href="uxdesign.html">UX
+                                        Design</a>
+                                </li>
+                                <li>
+                                    <a class="textberkeley navartdirection dropdown-item py-4"
+                                        href="artdirection.html">Art
+                                        Direction</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <!-- DISPLAY ON DESKTOP ONLY -->
+                    <ul class="navbar-nav d-none d-lg-block">
+                        <li class="navwork nav-item dropdown bg-white">
+                            <a class="navworkblue nav-link dropdown-toggle fs-3 p-3 px-5 fw-medium" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Work
+                            </a>
+                            <ul class="dropdown-menu fs-5 rounded-5 border-0 shadow">
+                                <li class="hover-forward px-4">
+                                    <a class="navphotography textberkeley dropdown-item p-4 fw-medium" href="photography.html">Photography</a>
+                                </li>
+                                <li class="px-4">
+                                    <a class="hover-forward textberkeley navuxdesign dropdown-item p-4 fw-medium" href="uxdesign.html">UX Design</a>
+                                </li>
+                                <li class="px-4">
+                                    <a class="hover-forward textberkeley navartdirection dropdown-item p-4 fw-medium" href="artdirection.html">Art Direction</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <!-- ABOUT -->
+                    <div class="nav-item border-2 px-5 navabout p-3">
+                        <a class="navaboutblue nav-link fs-3 fw-medium" aria-current="page" href="about.html">About</a>
+                    </div>
+                    <!-- RESUME -->
+                    <!-- Padding only on hamburger to keep resume separate -->
+                    <div class="nav-item pb-5 pb-lg-3 py-3">
+                        <!-- Resume styling -->
+                        <div class="navresume border-0 px-4">
+                            <a class="nav-link active fs-3 p-3 fw-semibold" aria-current="page" target="_blank"
+                                href="https://www.dropbox.com/scl/fi/l3lwlzy48x57yh7ndb9th/Resume-test.pdf?rlkey=ggzcfbgfz8tlrncumady8gcn5">Resume
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
-    </nav>
+        </nav>
+
+        <!-- DIV to give space between nav bar and the banner, so banner doesn't get covered by nav bar -->
+        <div class="py-5 my-4"></div>
+
 
     <!-- LANGFORD TOWN TITLE -->
 
@@ -55,17 +115,70 @@
 
     <!-- THANK YOU TEXT + BUTTON -->
 
-    <!-- FOOTER -->
-
-
-
-
-
-
-
+ <!-- FOOTER -->
+ <footer class="p-5 pb-2">
+    <h2 class="text-white display-3 fw-semibold pb-3">
+        Bring your project to life, let's connect!
+    </h2>
+    <a class="outlinebuttonfooter btn btn-white text-white border-white fs-4 py-3 px-5 fw-semibold"
+        href="mailto:sunitjjo@gmail.com">
+        Email me
+    </a>
+    <hr class="my-5 border-white border-2">
+    <div class="footergrid row">
+        <div class="col-md-4 logoandmail">
+            <a href="index.html">
+                <img class="footerlogo" src="images/logofooter.svg" alt="Logo" height="65">
+            </a>
+            <br>
+            <a class="link-light link-underline link-underline-opacity-0 link-underline-opacity-100-hover fs-4" href="mailto:sunitjjo@gmail.com">sunitjjo@gmail.com</a>
+        </div>
+        <div class="col-md-4 sociallinks py-4 py-md-0 fs-5">
+            <a class="link-light link-underline link-underline-opacity-0 link-underline-opacity-100-hover" href="https://www.linkedin.com/in/sunitjj/">Linkedin</a>
+            <br>
+            <a class="link-light link-underline link-underline-opacity-0 link-underline-opacity-100-hover" href="https://www.behance.net/sunitj">Behance</a>
+            <br>
+            <a class="link-light link-underline link-underline-opacity-0 link-underline-opacity-100-hover" href="https://www.instagram.com/crispypoppadom/">Instagram</a>
+        </div>
+        <div class="col-md-4 quicklinks py-4 py-md-0 fs-5">
+            <a class="link-light link-underline link-underline-opacity-0 link-underline-opacity-100-hover" href="about.html">About</a>
+            <br>
+            <a class="link-light link-underline link-underline-opacity-0 link-underline-opacity-100-hover" href="uxdesign.html">UX Design</a>
+            <br>
+            <a class="link-light link-underline link-underline-opacity-0 link-underline-opacity-100-hover" href="artdirection.html">Art Direction</a>
+        </div>
+    </div>
+    <p class="text-white pt-md-5">© 2023 Sunit J. All rights reserved.</p>
+</footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous">
+    </script>
+
+    <!-- Make the logo wink when nav is toggled -->
+    <script>
+        const nav = document.querySelector('.javanav');
+        const logo = document.querySelector('.logo1');
+
+        nav.addEventListener('click', function () {
+            this.classList.toggle('active');
+
+            if (this.classList.contains('active')) {
+                logo.src = 'images/logo2.svg'
+            } else {
+                logo.src = 'images/logo.svg'
+            }
+        })
+    </script>
+    <!-- Making logo wink on hover for desktop -->
+    <script>
+        function hover(img) {
+            img.src = "images/logo2.svg"
+        }
+
+        function hoverOut(img) {
+            img.src = "images/logo.svg"
+        }
     </script>
 </body>
 

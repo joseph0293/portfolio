@@ -2,9 +2,8 @@
     --californiagold: #FDB515;
     --cinnabar: #E94F37;
     --berkeleyblue: #003262;
-
-
 }
+
 
 * {
     font-family: 'Montserrat';
@@ -15,20 +14,22 @@
     color: white !important;
 }
 
+.outlinebuttonfooter {
+    border-radius: 100px;
+}
+
 .outlinebuttonfooter:hover {
     background-color: white;
     color: var(--berkeleyblue) !important;
 }
 
-footer {
-    background-color: var(--berkeleyblue);
+
+/* Set colour to orange for category */
+h5 {
+    color: var(--cinnabar);
 }
 
-/* 
-.navwork:hover {
-    border: 1px solid var(--berkeleyblue);
-    border-radius: 20px;
-} */
+
 
 /* Set font everywhere */
 
@@ -36,37 +37,38 @@ body {
     font-family: "Montserrat";
 }
 
-/* Styling nav items */
+/* Styling nav & nav items */
 
 .navresume {
     background-color: var(--californiagold);
     color: white;
     border-radius: 40px;
+    transition: 0.3s;
 }
 
 .navresume:hover,
-.navresume:active {
+.navresume:active,
+.navresume:focus {
     background-color: var(--berkeleyblue);
 }
 
 .navabout {
+    border: none;
     border-radius: 40px;
     border: 2px solid white;
+    transition: 0.3s;
 }
 
 .navabout:hover,
-.navabout:active {
+.navabout:active,
+.navabout:focus {
     border: 2px solid var(--berkeleyblue);
 }
 
 .navwork {
+    transition: 0.3s;
     border: 2px solid white;
     border-radius: 40px;
-}
-
-.navwork:hover,
-.navwork:active {
-    border: 2px solid var(--berkeleyblue);
 }
 
 .workitems {
@@ -74,10 +76,129 @@ body {
     background: none;
 }
 
+/* Styling hamburger into the X */
+
+/* Defining shape and color of the hamburger lines (span tags) */
+.navbar-toggler span {
+    display: block;
+    background-color: var(--berkeleyblue);
+    height: 5px;
+    width: 33px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    position: relative;
+    opacity: 1;
+    transition: all 0.3s ease-out;
+    transform-origin: center left;
+    background-color: var(--berkeleyblue);
+}
+
+/* padding for top line */
+.navbar-toggler span:nth-child(1) {
+    margin-top: 0.3em;
+}
+
+/* Animate collapse into X */
+
+/* rotate top line by 45 degrees, move it up and closer to the center of the X of the button, change colour to orange */
+.navbar-toggler:not(.collapsed) span:nth-child(1) {
+    transform: translate(15%, -33%) rotate(45deg);
+    background-color: var(--cinnabar);
+}
+
+/* make centre line transparent */
+.navbar-toggler:not(.collapsed) span:nth-child(2) {
+    opacity: 0;
+}
+
+/* rotate bottmo line 45 degrees  in, and closer to center of the X of the button, change colour to orange  */
+.navbar-toggler:not(.collapsed) span:nth-child(3) {
+    transform: translate(15%, 33%) rotate(-45deg);
+    background-color: var(--cinnabar);
+}
+
+
+/* Animate collapse open into hamburger menu */
+
+/* top line moves back to first positionwith blue */
+.navbar-toggler span:nth-child(1) {
+    transform: translate(0%, 0%) rotate(0deg);
+    background-color: var(--berkeleyblue);
+}
+
+/* middle line goes back to opacity 100% */
+.navbar-toggler span:nth-child(2) {
+    opacity: 1;
+}
+
+/* bottom line goes back to first position with blue */
+.navbar-toggler span:nth-child(3) {
+    transform: translate(0%, 0%) rotate(0deg);
+    background-color: var(--berkeleyblue);
+}
+
+/* Removing the border and outline for hamburger */
+
+.navbar-toggler,
+.navbar-toggler:focus,
+.navbar-toggler:active {
+    outline: none;
+    border: none;
+    box-shadow: none;
+}
+
+/* Animation for nav items */
+
+.hover-forward {
+    transition-duration: 0.3s;
+    transition-property: transform;
+}
+
+.hover-forward:hover {
+    transform: translateX(8px);
+}
+
+
+
+
 /* Remove the hover */
 .navphotography:hover,
+.navphotography:active,
+.navphotography:focus,
 .navuxdesign:hover,
-.navartdirection:hover {
+.navuxdesign:active,
+.navuxdesign:focus,
+.navartdirection:hover,
+.navartdirection:active,
+.navartdirection:focus {
     background: none;
-    color: var(--berkeleyblue);
+    text-decoration: underline;
+}
+
+
+/* Set text colour to blue */
+
+.card,
+.outlinebutton,
+.navworkblue,
+.navworkblue:hover,
+.navaboutblue,
+.navaboutblue:hover,
+.textberkeley {
+    color: var(--berkeleyblue) !important;
+}
+
+/* Set background colours to brand blue */
+
+footer,
+.showreel {
+    background-color: var(--berkeleyblue);
+}
+
+/* Set border to blue */
+
+.outlinebutton,
+.navwork:hover,
+.navwork:active {
+    border: 2px solid var(--berkeleyblue);
 }
