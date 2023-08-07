@@ -10,7 +10,8 @@
 }
 
 .outlinebutton:hover {
-    background-color: var(--berkeleyblue);
+    background-color: var(--berkeleyblue) !important;
+    border: 2px solid var(--berkeleyblue) !important;
     color: white !important;
 }
 
@@ -199,6 +200,25 @@ footer,
 
 .outlinebutton,
 .navwork:hover,
-.navwork:active {
+.navwork:active,
+.inputborderberkely {
     border: 2px solid var(--berkeleyblue);
+}
+
+/* Orange background style the social icons */
+.bg-cinnabar {
+    background-color: var(--cinnabar);
+}
+
+/* Breadcrumb hover styling */
+.breadcrumbstyling {
+    color: var(--berkeleyblue);
+}
+
+.breadcrumbstyling:hover {
+    color: var(--cinnabar);
+}
+
+.inputborderberkely {
+    width: 100%;
 }
