@@ -234,4 +234,19 @@ footer,
     transform: translateY(-15px);
 }
 
-/* Style Showreel Video */
+/* Style icons for uneven icon dimensions on About Page */
+
+.smicons {
+    padding: 10px 14px;
+    background-color: var(--cinnabar);
+    border-radius: 60px;
+    height: 20px;
+    width: 20px;
+    color: white;
+}
+
+.smicons:hover,
+.smicons:focus,
+.smicons:active {
+    background-color: var(--berkeleyblue);
+}
