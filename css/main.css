@@ -235,17 +235,3 @@ footer,
 }
 
 /* Style Showreel Video */
-
-.videowhite {
-    background-color: white;
-    height: 100rem;
-}
-
-.showreel {
-    height: 40rem;
-    padding-bottom: 100px;
-}
-
-.showreelvideo {
-    transform: translateY(50px);
-}
