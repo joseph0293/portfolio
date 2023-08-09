@@ -5,7 +5,7 @@
 
 While coding this assignment, the most amount of time taken was on the Navigation Bar. Styling the nav bar required a lot of work, especially aligning the Logo with content, Work and About links in the centre and the Resume button at the end. The solution was just placement of the nav links in different DIVs and using flex.
 
-I've also made the logo wink on hover for desktop, as well as have the logo wink when it was tapped, on mobile. This required javascript to complete which I looked up and incorporated in my code. Changed the hamburger icon to an X when expanded and colour coded the same to fit the brand colours.
+I've also made the logo wink on hover for desktop, as well as have the logo wink when it was tapped, on mobile. This required javascript to complete which I looked up and incorporated in my code. Changed the hamburger icon to an X when expanded ( using 3 spans and transition animations) and colour coded the same to fit the brand colours.
 
 The showreel video is yet to be completed, but I've ensured that I make it autoplay on mute (just like I'd have with the final video) with the 3 seconds that I have for now.
 
