@@ -252,3 +252,14 @@ footer,
 .smicons:active {
     background-color: var(--berkeleyblue);
 }
+
+/* Style video background */
+.showreelvideo {
+    background-color: var(--berkeleyblue);
+    height: 22rem;
+}
+
+.videowhite {
+    background-color: white;
+    height: 20rem;
+}

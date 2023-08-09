@@ -7,9 +7,7 @@ While coding this assignment, the most amount of time taken was on the Navigatio
 
 I've also made the logo wink on hover for desktop, as well as have the logo wink when it was tapped, on mobile. This required javascript to complete which I looked up and incorporated in my code. Changed the hamburger icon to an X when expanded and colour coded the same to fit the brand colours.
 
-The showreel video is yet to be completed, but I've ensured that I make it autoplay on mute (just like I'd have with the final) with the 3 seconds that I have for now.
-
-The most annoying part of this assignment would be that if I changed anything related to the nav bar or the footer, I'd have to copy paste the same to all 11 pages.
+The showreel video is yet to be completed, but I've ensured that I make it autoplay on mute (just like I'd have with the final video) with the 3 seconds that I have for now.
 
 ### Nav bar that displays on desktop only:
 
@@ -30,3 +28,9 @@ I've used this image as a placeholder for now but hope to replace it with an act
 [Change Hamburger to X](https://stackoverflow.com/questions/28247310/bootstrap-mobile-menu-icon-change-to-x-close)
 
 [Change logo when clicking on Hamburger](https://stackoverflow.com/questions/58625458/how-to-change-logo-src-when-clicked-on-hamburger-menu)
+
+## Libraries used:
+
+1. Bootstrap Icons & Font Awesome for Icons
+2. Bootstrap (of course)
+3. Google Fonts
