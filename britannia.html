@@ -130,15 +130,24 @@
     <main role="main" class="container">
         <!-- Breadcrumbs -->
         <nav aria-label="Breadcrumb" class="breadcrumbs my-5">
-            <ul class="textberkeley d-flex fs-6 fw-semibold">
-                <li><a class="breadcrumbstyling" href="index.html">Home</a></li>
-                <li><i class="bi bi-arrow-right-short"></i></li>
-                <li><a class="breadcrumbstyling" href="artdirection.html">Art Direction</a></li>
-                <li><i class="bi bi-arrow-right-short"></i></li>
-                <li><a class="breadcrumbstyling" href="britannia.html">Britannia Annual Report</a></li>
+            <ul itemscope itemtype="https://schema.org/BreadcrumbList" class="textberkeley d-flex fs-6 fw-semibold">
+                <li itemprop="itemListElement">
+                    <a itemprop="item" class="breadcrumbstyling" href="index.html">Home</a>
+                </li>
+
+                <i class="bi bi-arrow-right-short"></i>
+
+                <li itemprop="itemListElement">
+                    <a itemprop="item" class="breadcrumbstyling" href="artdirection.html">Art Direction</a>
+                </li>
+
+                <i class="bi bi-arrow-right-short"></i>
+
+                <li itemprop="itemListElement">
+                    <a itemprop="item" class="breadcrumbstyling" href="britannia.html">Britannia Annual Report</a>
+                </li>
             </ul>
         </nav>
-
 
         <!-- BRITANNIA ANNUAL REPORT TITLE & DESCRIPTION -->
         <section role="region">

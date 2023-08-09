@@ -133,12 +133,22 @@
     <main role="main" class="container">
         <!-- Breadcrumbs -->
         <nav aria-label="Breadcrumb" class="breadcrumbs my-5">
-            <ul class="textberkeley d-flex fs-6 fw-semibold">
-                <li><a class="breadcrumbstyling" href="index.html">Home</a></li>
-                <li><i class="bi bi-arrow-right-short"></i></li>
-                <li><a class="breadcrumbstyling" href="photography.html">Photography</a></li>
-                <li><i class="bi bi-arrow-right-short"></i></li>
-                <li><a class="breadcrumbstyling" href="amazinggreys.html">Amazing Greys</a></li>
+            <ul itemscope itemtype="https://schema.org/BreadcrumbList" class="textberkeley d-flex fs-6 fw-semibold">
+                <li itemprop="itemListElement">
+                    <a itemprop="item" class="breadcrumbstyling" href="index.html">Home</a>
+                </li>
+                
+                <i class="bi bi-arrow-right-short"></i>
+                
+                <li itemprop="itemListElement">
+                    <a itemprop="item" class="breadcrumbstyling" href="photography.html">Photography</a>
+                </li>
+                
+                <i class="bi bi-arrow-right-short"></i>
+                
+                <li itemprop="itemListElement">
+                    <a itemprop="item" class="breadcrumbstyling" href="amazinggreys.html">Amazing Greys</a>
+                </li>
             </ul>
         </nav>
 
