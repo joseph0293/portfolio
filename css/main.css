@@ -26,7 +26,7 @@
 
 
 /* Set colour to orange for category */
-h5 {
+h3 {
     color: var(--cinnabar);
 }
 
@@ -199,6 +199,8 @@ footer,
 /* Set border to blue */
 
 .outlinebutton,
+.outlinebutton:focus,
+.outlinebutton:active,
 .navwork:hover,
 .navwork:active,
 .inputborderberkely,

@@ -30,11 +30,9 @@
 
 <body>
 
-
-
     <!-- NAVIGATION -->
-    <header>
-        <nav class="fixed-top navbar navbar-expand-lg bg-white shadow py-lg-2">
+    <header role="banner">
+        <nav role="navigation" class="fixed-top navbar navbar-expand-lg bg-white shadow py-lg-2">
             <div class="container javanav">
                 <a class="d-lg-none navbar-brand ps-3 ps-sm-0" href="index.html">
                     <img class="logo1" src="images/logo.svg" alt="logo" width="220" height="120">
@@ -55,13 +53,12 @@
                                 onmouseover="hover(this);" onmouseout="hoverOut(this)">
                         </a>
                     </div>
-                    <!-- Padding to align with everything ps-3 & ps-sm-0 -->
                     <!-- WORK -->
                     <ul class="navbar-nav py-3 d-lg-none">
                         <!-- Padding to give enough space -->
                         <li class="navwork nav-item dropdown bg-white">
-                            <a class="navworkblue nav-link dropdown-toggle fs-3 p-3 px-5 fw-medium" href="#"
-                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <a aria-haspopup="true" class="navworkblue nav-link dropdown-toggle fs-3 p-3 px-5 fw-medium"
+                                href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Work
                             </a>
                             <ul class="workitems dropdown-menu text-center fs-4">
@@ -84,8 +81,8 @@
                     <!-- DISPLAY ON DESKTOP ONLY -->
                     <ul class="navbar-nav d-none d-lg-block">
                         <li class="navwork nav-item dropdown bg-white">
-                            <a class="navworkblue nav-link dropdown-toggle fs-3 p-3 px-5 fw-medium" href="#"
-                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <a aria-haspopup="true" class="navworkblue nav-link dropdown-toggle fs-3 p-3 px-5 fw-medium"
+                                href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Work
                             </a>
                             <ul class="dropdown-menu fs-5 rounded-5 border-0 shadow">
@@ -114,7 +111,8 @@
                     <div class="nav-item pb-5 pb-lg-3 py-3">
                         <!-- Resume styling -->
                         <div class="navresume border-0 px-4">
-                            <a class="nav-link active fs-3 p-3 fw-semibold" aria-current="page" target="_blank"
+                            <a class="nav-link active fs-3 p-3 fw-semibold" aria-current="page"
+                                aria-label="opens in new tab" target="_blank"
                                 href="https://www.dropbox.com/scl/fi/l3lwlzy48x57yh7ndb9th/Resume-test.pdf?rlkey=ggzcfbgfz8tlrncumady8gcn5">Resume
                             </a>
                         </div>
@@ -127,9 +125,14 @@
         <div class="py-5 my-4"></div>
 
     </header>
-    <main class="container">
+    <!-- ****************************************** NAVIGATION ENDS ****************************************** -->
+
+
+
+    <main role="main" class="container">
+
         <!-- Breadcrumbs -->
-        <nav class="breadcrumbs my-5">
+        <nav aria-label="Breadcrumb" class="breadcrumbs my-5">
             <ul class="textberkeley d-flex fs-6 fw-semibold">
                 <li><a class="breadcrumbstyling" href="index.html">Home</a></li>
                 <li><i class="bi bi-arrow-right-short"></i></li>
@@ -137,49 +140,56 @@
             </ul>
         </nav>
 
-        <!-- UX DESIGN TITLE & DESCRIPTION -->
-        <div class="introhead p-4">
-            <h1 class="textberkeley display-4 fw-bold">
-                UX Design
-            </h1>
-            <p class="textberkeley fs-5">
-                UX Projects created while studying at Algonquin College, Ottawa. Created using Adobe XD.
-            </p>
-        </div>
-        
-        <!-- PROJECT TILES -->
-        <div class="row row-cols-1 row-cols-lg-2 g-4 p-4 mb-5">
-            <div class="col">
-                <div class="card projectcard border-0">
-                    <a class="text-decoration-none" href="breadytogo.html">
-                        <img src="images/b2gthumbnail.jpg" class="card-img-top rounded-top-5 thumbnailborder" alt="Langford Town Project Thumbnail">
-                        <div class="card-body rounded-bottom-5 border-top-0 thumbnailborder">
-                            <h5 class="card-title textberkeley display-5 fw-semibold lh-1">Bready To Go</h5>
-                            <p class="card-text fs-5 textberkeley mb-3">Class assignment on a drive-through bakery in Ottawa focused on speedy, freshly made bread.</p>
-                            <div class="outlinebutton btn btn-white rounded-5 fs-5 fw-semibold">View Full Project &#9654;</div>
-                        </div>
-                    </a>
-                </div>
+        <section role="region">
+
+            <!-- UX DESIGN TITLE & DESCRIPTION -->
+            <div class="introhead p-4">
+                <h1 class="textberkeley display-4 fw-bold">
+                    UX Design
+                </h1>
+                <p class="textberkeley fs-5">
+                    UX Projects created while studying at Algonquin College, Ottawa. Created using Adobe XD.
+                </p>
             </div>
 
-            <div class="col">
-                <div class="card projectcard border-0">
-                    <a class="text-decoration-none" href="portfoliosite.html">
-                        <img src="images/portfoliothumbnail.jpg" class="card-img-top rounded-top-5 thumbnailborder" alt="Langford Town Project Thumbnail">
-                        <div class="card-body rounded-bottom-5 border-top-0 thumbnailborder">
-                            <h5 class="card-title textberkeley display-5 fw-semibold lh-1">Portfolio Website</h5>
-                            <p class="card-text fs-5 textberkeley mb-3">Branding myself and creating a website to market myself as a creative professional with industry specific skills.</p>
-                            <div class="outlinebutton btn btn-white rounded-5 fs-5 fw-semibold">View Full Project &#9654;</div>
-                        </div>
-                    </a>
+            <!-- PROJECT TILES -->
+            <div class="row row-cols-1 row-cols-lg-2 g-4 p-4 mb-5">
+                <div class="col">
+                    <div class="card projectcard border-0">
+                        <a class="text-decoration-none" href="breadytogo.html">
+                            <img src="images/b2gthumbnail.jpg" class="card-img-top rounded-top-5 thumbnailborder"
+                                alt="Langford Town Project Thumbnail">
+                            <div class="card-body rounded-bottom-5 border-top-0 thumbnailborder">
+                                <h5 class="card-title textberkeley display-5 fw-semibold lh-1">Bready To Go</h5>
+                                <p class="card-text fs-5 textberkeley mb-3">Class assignment on a drive-through bakery
+                                    in Ottawa focused on speedy, freshly made bread.</p>
+                                <div class="outlinebutton btn btn-white rounded-5 fs-5 fw-semibold">View Full Project
+                                    &#9654;</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card projectcard border-0">
+                        <a class="text-decoration-none" href="portfoliosite.html">
+                            <img src="images/portfoliothumbnail.jpg" class="card-img-top rounded-top-5 thumbnailborder"
+                                alt="Langford Town Project Thumbnail">
+                            <div class="card-body rounded-bottom-5 border-top-0 thumbnailborder">
+                                <h5 class="card-title textberkeley display-5 fw-semibold lh-1">Portfolio Website</h5>
+                                <p class="card-text fs-5 textberkeley mb-3">Branding myself and creating a website to
+                                    market myself as a creative professional with industry specific skills.</p>
+                                <div class="outlinebutton btn btn-white rounded-5 fs-5 fw-semibold">View Full Project
+                                    &#9654;</div>
+                            </div>
+                        </a>
+                    </div>
                 </div>
             </div>
-        </div>
-
-
+        </section>
     </main>
     <!-- FOOTER -->
-    <footer class="p-5 pb-2">
+    <footer role="contentinfo" class="p-5 pb-2">
         <h2 class="text-white display-3 fw-semibold pb-3">
             Bring your project to life, let's connect!
         </h2>
@@ -199,13 +209,15 @@
             </div>
             <div class="col-md-4 sociallinks py-4 py-md-0 fs-5">
                 <a class="link-light link-underline link-underline-opacity-0 link-underline-opacity-100-hover"
-                    href="https://www.linkedin.com/in/sunitjj/">Linkedin</a>
+                    href="https://www.linkedin.com/in/sunitjj/" aria-label="opens in new tab"
+                    target="_blank">Linkedin</a>
                 <br>
                 <a class="link-light link-underline link-underline-opacity-0 link-underline-opacity-100-hover"
-                    href="https://www.behance.net/sunitj">Behance</a>
+                    href="https://www.behance.net/sunitj" aria-label="opens in new tab" target="_blank">Behance</a>
                 <br>
                 <a class="link-light link-underline link-underline-opacity-0 link-underline-opacity-100-hover"
-                    href="https://www.instagram.com/crispypoppadom/">Instagram</a>
+                    href="https://www.instagram.com/crispypoppadom/" aria-label="opens in new tab"
+                    target="_blank">Instagram</a>
             </div>
             <div class="col-md-4 quicklinks py-4 py-md-0 fs-5">
                 <a class="link-light link-underline link-underline-opacity-0 link-underline-opacity-100-hover"

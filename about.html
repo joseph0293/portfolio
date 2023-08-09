@@ -30,8 +30,8 @@
 
 <body>
     <!-- NAVIGATION -->
-    <header>
-        <nav class="fixed-top navbar navbar-expand-lg bg-white shadow py-lg-2">
+    <header role="banner">
+        <nav role="navigation" class="fixed-top navbar navbar-expand-lg bg-white shadow py-lg-2">
             <div class="container javanav">
                 <a class="d-lg-none navbar-brand ps-3 ps-sm-0" href="index.html">
                     <img class="logo1" src="images/logo.svg" alt="logo" width="220" height="120">
@@ -52,27 +52,25 @@
                                 onmouseover="hover(this);" onmouseout="hoverOut(this)">
                         </a>
                     </div>
-                    <!-- Padding to align with everything ps-3 & ps-sm-0 -->
                     <!-- WORK -->
                     <ul class="navbar-nav py-3 d-lg-none">
                         <!-- Padding to give enough space -->
                         <li class="navwork nav-item dropdown bg-white">
-                            <a class="navworkblue nav-link dropdown-toggle fs-3 p-3 px-5 fw-medium" href="#"
+                            <a aria-haspopup="true" class="navworkblue nav-link dropdown-toggle fs-3 p-3 px-5 fw-medium" href="#"
                                 role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Work
                             </a>
                             <ul class="workitems dropdown-menu text-center fs-4">
                                 <li>
-                                    <a class="textberkeley navphotography dropdown-item py-4 link-offset-2"
+                                    <a class="textberkeley navphotography dropdown-item py-4"
                                         href="photography.html">Photography <i class="bi bi-arrow-right-short"></i></a>
                                 </li>
                                 <li>
-                                    <a class="textberkeley navuxdesign dropdown-item py-4 link-offset-2"
-                                        href="uxdesign.html">UX
+                                    <a class="textberkeley navuxdesign dropdown-item py-4" href="uxdesign.html">UX
                                         Design <i class="bi bi-arrow-right-short"></i></a>
                                 </li>
                                 <li>
-                                    <a class="textberkeley navartdirection dropdown-item py-4 link-offset-2"
+                                    <a class="textberkeley navartdirection dropdown-item py-4"
                                         href="artdirection.html">Art
                                         Direction <i class="bi bi-arrow-right-short"></i></a>
                                 </li>
@@ -82,7 +80,7 @@
                     <!-- DISPLAY ON DESKTOP ONLY -->
                     <ul class="navbar-nav d-none d-lg-block">
                         <li class="navwork nav-item dropdown bg-white">
-                            <a class="navworkblue nav-link dropdown-toggle fs-3 p-3 px-5 fw-medium" href="#"
+                            <a aria-haspopup="true" class="navworkblue nav-link dropdown-toggle fs-3 p-3 px-5 fw-medium" href="#"
                                 role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Work
                             </a>
@@ -112,7 +110,8 @@
                     <div class="nav-item pb-5 pb-lg-3 py-3">
                         <!-- Resume styling -->
                         <div class="navresume border-0 px-4">
-                            <a class="nav-link active fs-3 p-3 fw-semibold" aria-current="page" target="_blank"
+                            <a class="nav-link active fs-3 p-3 fw-semibold" aria-current="page"
+                                aria-label="opens in new tab" target="_blank"
                                 href="https://www.dropbox.com/scl/fi/l3lwlzy48x57yh7ndb9th/Resume-test.pdf?rlkey=ggzcfbgfz8tlrncumady8gcn5">Resume
                             </a>
                         </div>
@@ -120,14 +119,14 @@
                 </div>
             </div>
         </nav>
-    </header>
 
-    <!-- DIV to give space between nav bar and the content, so content doesn't get covered by nav bar -->
-    <div class="py-5 my-4"></div>
+        <!-- DIV to give space between nav bar and the banner, so banner doesn't get covered by nav bar -->
+        <div class="py-5 my-4"></div>
+        <!-- ****************************************** NAVIGATION ENDS ****************************************** -->
 
-    <main class="container">
+    <main role="main" class="container">
         <!-- Breadcrumbs -->
-        <nav class="breadcrumbs mt-5">
+        <nav aria-label="Breadcrumb" class="breadcrumbs mt-5">
             <ul class="textberkeley d-flex fs-6 fw-semibold">
                 <li><a class="breadcrumbstyling" href="index.html">Home</a></li>
                 <li><i class="bi bi-arrow-right-short"></i></li>
@@ -136,7 +135,7 @@
         </nav>
 
         <!-- About Card -->
-        <div class="card my-5 border-0 p-2">
+        <div role="region" class="card my-5 border-0 p-2">
             <div class="row g-3">
                 <div class="col-lg-6 col-xl-5 col-xxl-4">
                     <img src="images/self.jpg" class="rounded-circle img-fluid p-2" alt="Photo of myself">
@@ -166,7 +165,7 @@
 
 
         <!-- Contact Form -->
-        <div class="contactme p-4 mb-5 container-lg">
+        <div role="complementary" class="contactme p-4 mb-5 container-lg">
             <div>
                 <h2 class="textberkeley display-5 lh-1 fw-semibold mb-5">
                     Ready to give wings to your project? Get in touch!
@@ -206,7 +205,7 @@
     <!-- CONTACT FORM -->
 
     <!-- FOOTER -->
-    <footer class="p-5 pb-2">
+    <footer role="contentinfo" class="p-5 pb-2">
         <h2 class="text-white display-3 fw-semibold pb-3">
             Bring your project to life, let's connect!
         </h2>
@@ -226,13 +225,13 @@
             </div>
             <div class="col-md-4 sociallinks py-4 py-md-0 fs-5">
                 <a class="link-light link-underline link-underline-opacity-0 link-underline-opacity-100-hover"
-                    href="https://www.linkedin.com/in/sunitjj/">Linkedin</a>
+                    href="https://www.linkedin.com/in/sunitjj/" aria-label="opens in new tab" target="_blank">Linkedin</a>
                 <br>
                 <a class="link-light link-underline link-underline-opacity-0 link-underline-opacity-100-hover"
-                    href="https://www.behance.net/sunitj">Behance</a>
+                    href="https://www.behance.net/sunitj" aria-label="opens in new tab" target="_blank">Behance</a>
                 <br>
                 <a class="link-light link-underline link-underline-opacity-0 link-underline-opacity-100-hover"
-                    href="https://www.instagram.com/crispypoppadom/">Instagram</a>
+                    href="https://www.instagram.com/crispypoppadom/" aria-label="opens in new tab" target="_blank">Instagram</a>
             </div>
             <div class="col-md-4 quicklinks py-4 py-md-0 fs-5">
                 <a class="link-light link-underline link-underline-opacity-0 link-underline-opacity-100-hover"
