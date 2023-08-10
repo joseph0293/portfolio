@@ -9,7 +9,9 @@
     font-family: 'Montserrat';
 }
 
-.outlinebutton:hover {
+.outlinebutton:hover,
+.outlinebutton:focus,
+.outlinebutton:active {
     background-color: var(--berkeleyblue) !important;
     border: 2px solid var(--berkeleyblue) !important;
     color: white !important;
@@ -19,7 +21,9 @@
     border-radius: 100px;
 }
 
-.outlinebuttonfooter:hover {
+.outlinebuttonfooter:hover,
+.outlinebuttonfooter:active,
+.outlinebuttonfooter:focus {
     background-color: white;
     color: var(--berkeleyblue) !important;
 }
@@ -179,6 +183,10 @@ body {
 
 /* Set text colour to blue */
 
+.outlinebutton {
+    transition: 0.3s;
+}
+
 .card,
 .outlinebutton,
 .navworkblue,
@@ -239,6 +247,7 @@ footer,
 /* Style icons for uneven icon dimensions on About Page */
 
 .smicons {
+    transition: 0.3s;
     padding: 10px 14px;
     background-color: var(--cinnabar);
     border-radius: 60px;

@@ -7,7 +7,7 @@ While coding this assignment, the most amount of time taken was on the Navigatio
 
 I've also made the logo wink on hover for desktop, as well as have the logo wink when it was tapped, on mobile. This required javascript to complete which I looked up and incorporated in my code. Changed the hamburger icon to an X when expanded ( using 3 spans and transition animations) and colour coded the same to fit the brand colours.
 
-The showreel video is yet to be completed, but I've ensured that I make it autoplay on mute (just like I'd have with the final video) with the 3 seconds that I have for now.
+The showreel video is only a teaser for now, but I've ensured that I make it autoplay on mute (just like I'd have with the final video) with the 3 seconds that I have for now.
 
 ### Nav bar that displays on desktop only:
 
@@ -21,7 +21,7 @@ This also made it easier for me to add another image tag for javascript to chang
 I've used the following sources to help with coding my website:
 
 [Banner Image](https://www.pexels.com/photo/photo-of-boy-wearing-yellow-shirt-while-using-an-imac-4144144/)
-I've used this image as a placeholder for now but hope to replace it with an actual image of myyself in the future.
+I've used this image as a placeholder for now, but hope to replace it with an image of myyself in the future.
 
 [Hover image javascrpt](https://linuxhint.com/change-image-on-hover-in-javascript/)
 
