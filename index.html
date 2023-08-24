@@ -29,8 +29,15 @@
 </head>
 
 <body>
-    <!-- NAVIGATION -->
+
     <header role="banner">
+
+        <!-- Skip link for screen readers for accessibility -->
+        <div class="skipbutton">
+            <a class="skiplink" href="#skipcontent">Skip To Content</a>
+        </div>
+
+        <!-- NAVIGATION -->
         <nav role="navigation" class="fixed-top navbar navbar-expand-lg bg-white shadow py-lg-2">
             <div class="container javanav">
                 <a class="d-lg-none navbar-brand ps-3 ps-sm-0" href="index.html">
@@ -102,18 +109,16 @@
                         </li>
                     </ul>
                     <!-- ABOUT -->
-                    <div class="nav-item border-2 px-5 navabout p-3">
-                        <a class="navaboutblue nav-link fs-3 fw-medium" aria-current="page" href="about.html">About</a>
+                    <div class="nav-item border-2 navabout">
+                        <a class="p-3 px-5 navaboutblue nav-link fs-3 fw-medium" aria-current="page"
+                            href="about.html">About</a>
                     </div>
                     <!-- RESUME -->
-                    <div class="nav-item pb-5 pb-lg-3 py-3">
-                        <!-- Resume styling -->
-                        <div class="navresume border-0 px-4">
-                            <a class="nav-link active fs-3 p-3 fw-semibold" aria-current="page"
-                                aria-label="opens in new tab" target="_blank"
-                                href="https://www.dropbox.com/scl/fi/l3lwlzy48x57yh7ndb9th/Resume-test.pdf?rlkey=ggzcfbgfz8tlrncumady8gcn5">Resume
-                            </a>
-                        </div>
+                    <div class="navresume border-0 nav-item my-3">
+                        <a class="navresumecolor nav-link active fs-3 p-3 px-5 fw-semibold" aria-current="page"
+                            aria-label="opens in new tab" target="_blank"
+                            href="https://www.dropbox.com/scl/fi/l3lwlzy48x57yh7ndb9th/Resume-test.pdf?rlkey=ggzcfbgfz8tlrncumady8gcn5">Resume
+                        </a>
                     </div>
                 </div>
             </div>
@@ -121,12 +126,8 @@
 
         <!-- DIV to give space between nav bar and the banner, so banner doesn't get covered by nav bar -->
         <div class="py-5 my-4"></div>
+
         <!-- ****************************************** NAVIGATION ENDS ****************************************** -->
-        
-        <!-- Skip link for screen readers for accessibility -->
-        <div class="skiplink">
-            <a href="#skipcontent">Skip To Content</a>
-        </div>
 
         <!-- BANNER IMAGE + TITLE/INTRODUCTION -->
         <div class="card text-bg-dark border-0 rounded-0">
@@ -135,23 +136,23 @@
             <picture>
                 <source srcset="images/banner-desktop-1500w.jpg 1x,
                                 images/banner-desktop-2000w.jpg 2x,
-                                images/banner-desktop-2500w.jpg 3x" media="(min-width: 1200px)"/>
+                                images/banner-desktop-2500w.jpg 3x" media="(min-width: 1200px)" />
 
                 <source srcset="images/banner-tablet-1000w.jpg 1x,
                                 images/banner-tablet-1500w.jpg 2x,
-                                images/banner-tablet-2000w.jpg 3x" media="(min-width: 768px)"/>
+                                images/banner-tablet-2000w.jpg 3x" media="(min-width: 768px)" />
 
                 <source srcset="images/banner-mobile-500w.jpg 1x,
                                 images/banner-mobile-1000w.jpg 2x,
-                                images/banner-mobile-1500w.jpg 3x" media="(max-width: 767px)"/>
+                                images/banner-mobile-1500w.jpg 3x" media="(max-width: 767px)" />
 
                 <img class="opacity-50 card-img rounded-0" src="img/art/square/lego_square_960.png"
                     alt="Banner image of myself working on a computer">
             </picture>
             <div class="card-img-overlay pt-5 pt-xxl-5 pt-lg-5 mt-lg-5 pt-md-5">
                 <div class="container">
-                    <h1 role="heading" class="card-title text-white display-6 fw-medium">Hello, I'm Sunit!</h1>
-                    <p role="heading" id="aboutme" class="text-white card-text display-1 lh-1 fw-bold">I design brands,
+                    <h1 role="heading" aria-level="1" class="card-title text-white display-6 fw-medium">Hello, I'm Sunit!</h1>
+                    <p role="heading" aria-level="2" id="aboutme" class="text-white card-text display-1 lh-1 fw-bold">I design brands,
                         visuals,
                         &#x003C;code&#x003E; & motion.
                     </p>
@@ -165,7 +166,7 @@
             <div class="vid">
                 <div class="showreelvideo">
                     <!-- Put the video here! -->
-                    <video class="rounded-5 text-center w-75" src="videos/showreel.mp4" autoplay loop muted></video>
+                    <video class="rounded-5 text-center w-75" alt="Showreel video of all my work" src="videos/showreel.mp4" autoplay loop muted></video>
                 </div>
                 <div class="videowhite"></div>
             </div>
@@ -186,10 +187,10 @@
                             <!-- Made responsive images so that best image displays on each device -->
                             <picture>
                                 <source srcset="images/soap-wide-1000.jpg 1x,
-                                                images/soap-wide-2000.jpg 2x" media="(min-width: 768px)"/>
+                                                images/soap-wide-2000.jpg 2x" media="(min-width: 768px)" />
 
                                 <source srcset="images/soap-mobile-500.jpg 1x,
-                                                images/soap-mobile-1000.jpg 2x" media="(max-width: 767px)"/>
+                                                images/soap-mobile-1000.jpg 2x" media="(max-width: 767px)" />
 
                                 <img class="img-fluid w-100 rounded-5" src="images/soap-wide-1000.jpg"
                                     alt="Photo of soap packaging with ingredients">
@@ -219,10 +220,10 @@
                         <a href="breadytogo.html">
                             <picture>
                                 <source srcset="images/bread-wide-1000.jpg 1x,
-                                                images/bread-wide-2000.jpg 2x" media="(min-width: 768px)"/>
+                                                images/bread-wide-2000.jpg 2x" media="(min-width: 768px)" />
 
                                 <source srcset="images/bread-mobile-500.jpg 1x,
-                                                images/bread-mobile-1000.jpg 2x" media="(max-width: 767px)"/>
+                                                images/bread-mobile-1000.jpg 2x" media="(max-width: 767px)" />
 
                                 <img class="img-fluid w-100 rounded-5" src="images/bread-wide-1000.jpg"
                                     alt="Photo of Bready To Go sticker on packaged loaves of bread">
@@ -251,10 +252,10 @@
                         <a href="ntorq.html">
                             <picture>
                                 <source srcset="images/marvel-wide-1000.jpg 1x,
-                                                images/marvel-wide-2000.jpg 2x" media="(min-width: 768px)"/>
+                                                images/marvel-wide-2000.jpg 2x" media="(min-width: 768px)" />
 
                                 <source srcset="images/marvel-mobile-500.jpg 1x,
-                                                images/marvel-mobile-1000.jpg 2x" media="(max-width: 767px)"/>
+                                                images/marvel-mobile-1000.jpg 2x" media="(max-width: 767px)" />
 
                                 <img class="img-fluid w-100 rounded-5" src="images/marvel-wide-1000.jpg"
                                     alt="Photo of Bready To Go sticker on packaged loaves of bread">

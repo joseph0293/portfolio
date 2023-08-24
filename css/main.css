@@ -52,25 +52,17 @@ body {
 }
 
 .navresume:hover,
-.navresume:active,
-.navresume:focus {
+.navresume:active {
     background-color: var(--berkeleyblue);
 }
 
-.navabout {
-    border: none;
-    border-radius: 40px;
-    border: 2px solid white;
-    transition: 0.3s;
-}
-
 .navabout:hover,
-.navabout:active,
-.navabout:focus {
+.navabout:active {
     border: 2px solid var(--berkeleyblue);
 }
 
-.navwork {
+.navwork,
+.navabout {
     transition: 0.3s;
     border: 2px solid white;
     border-radius: 40px;
@@ -176,8 +168,10 @@ body {
 .navartdirection:hover,
 .navartdirection:active,
 .navartdirection:focus {
-    background: none;
+    background: white;
     text-decoration: underline;
+    text-underline-offset: 10px;
+
 }
 
 
@@ -211,8 +205,7 @@ footer,
 .outlinebutton:active,
 .navwork:hover,
 .navwork:active,
-.inputborderberkely,
-.thumbnailborder {
+.inputborderberkely {
     border: 2px solid var(--berkeleyblue);
 }
 
@@ -223,11 +216,22 @@ footer,
 
 /* Breadcrumb hover styling */
 .breadcrumbstyling {
+    text-decoration: none;
     color: var(--berkeleyblue);
 }
 
 .breadcrumbstyling:hover {
+    text-decoration: underline;
+    text-underline-offset: 7px;
+    text-decoration-thickness: 2px;
     color: var(--cinnabar);
+}
+
+.breadcrumbactive {
+    text-decoration: underline;
+    text-underline-offset: 7px;
+    text-decoration-style: dashed;
+    text-decoration-thickness: 2px;
 }
 
 .inputborderberkely {
@@ -266,6 +270,83 @@ footer,
 /* Styling skiplink */
 
 .skiplink {
+    text-decoration: none;
+    z-index: 999;
+    padding: 10px;
+    margin: 20px;
+    margin-top: 50px;
+    border: 2px solid var(--berkeleyblue) !important;
+    border-radius: 50px;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
     transform: translateY(-200px);
+    background-color: var(--cinnabar);
     position: absolute;
+    transition: 0.4s;
+}
+
+
+.skiplink:focus-visible {
+    transform: translateY(100px);
+    position: absolute;
+}
+
+/* Accessible visually */
+
+/* Active States */
+.activepage {
+    border: dashed;
+    border: 2px dashed var(--berkeleyblue) !important;
+}
+
+.activesubpage {
+    text-decoration: underline;
+    text-decoration-style: dashed;
+    text-underline-offset: 10px;
+    text-decoration-thickness: 2px;
+}
+
+/* Set focus */
+
+.navworkblue:focus-visible,
+.navaboutblue:focus-visible,
+.navresumecolor:focus-visible {
+    border: none;
+    outline: 2px solid var(--cinnabar);
+    border-radius: 50px;
+
+}
+
+.projectcard:focus-visible,
+.text-decoration-none:focus-visible,
+.card a:focus-visible,
+.navbar-brand:focus-visible,
+.breadcrumbstyling:focus-visible,
+footer a:focus-visible,
+.form-control:focus-visible,
+.message:focus-visible,
+.form button:focus-visible,
+.navphotography:focus-visible,
+.navuxdesign:focus-visible,
+.navartdirection:focus-visible,
+.navbar-toggler:focus-visible {
+    border: none;
+    outline: 2px solid var(--cinnabar);
+    border-radius: 32px;
+    box-shadow: 0px 0px 10px rgb(180, 180, 180);
+}
+
+/* Form Validation */
+
+input:invalid {
+    background-color: var(--cinnabar);
+    box-shadow: 0px 0px 5px rgb(180, 180, 180);
+}
+
+
+/* Styling Modal */
+
+.modalstyle {
+    border: 2px solid var(--berkeleyblue);
 }
